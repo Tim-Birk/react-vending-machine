@@ -7,9 +7,6 @@ function App() {
   return (
     <div className='App'>
       <BrowserRouter>
-        <Route exact path='/'>
-          <VendingMachine />
-        </Route>
         <Route exact path='/chips'>
           <Snack
             name='Potato Chips'
@@ -27,6 +24,9 @@ function App() {
             name="Reese's Peanut Butter Cups"
             url='https://media.giphy.com/media/ndnynyuXAroti/giphy.gif'
           />
+        </Route>
+        <Route exact path='/'>
+          <VendingMachine />
         </Route>
       </BrowserRouter>
     </div>
